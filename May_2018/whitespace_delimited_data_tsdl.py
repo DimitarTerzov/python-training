@@ -43,4 +43,3 @@ def process_file(reader):
 if __name__ == '__main__':
     with open('lynx.txt', 'r') as input_file:
         print(process_file(input_file))
-        
