@@ -48,6 +48,6 @@ def read_all_molecules(reader):
     return result
 
 if __name__ == '__main__':
-    molecule_file = open('multimol.pdb', 'r')
+    molecule_file = open('multimolelules_file.pdb', 'r')
     molecules = read_all_molecules(molecule_file)
     print(molecules)
