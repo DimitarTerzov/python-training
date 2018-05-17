@@ -13,19 +13,21 @@ def read_molecule(reader):
         return None
     
     
-    
     # Name of the molecule: "COMPND    name".
     key, name = line.split()
     
     # Other lines are either "AND" or "ATOM num atom_type x y z".
     molecule = [name]
-    line = reader.readline()
+    reading = True
     
-    # Parse all the atoms in the molecule.
-    while not line.startswith('END'):
-        key, num, atom_type, x, y, z = line.split()
-        molecule.append([atom_type, x, y, z])
-        line = reader. readline()
+    while reading:
+        line = reader.readline()
+        if line.startswith('END'):
+            reading = False
+        else:
+            key, num, atom_type, x, y, z = line.split()
+            molecule.append([atom_type, x, y, z])
+            
         
     return molecule
 
