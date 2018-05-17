@@ -51,4 +51,3 @@ if __name__ == '__main__':
     molecule_file = open('multimol.pdb', 'r')
     molecules = read_all_molecules(molecule_file)
     print(molecules)
-    
