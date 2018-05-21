@@ -12,8 +12,7 @@ def read_molecule(reader):
     if not line:
         return None
     
-    
-    
+      
     # Name of the molecule: "COMPND    name".
     key, name = line.split()
     
