@@ -1,0 +1,13 @@
+1. Python 3 abouve
+2. Create JSON file
+3. Google Drive API quickstart.py file modify
+4. auth.py file 
+5. main.py file
+6. Run main.py
+
+
+# Can dislay all files in your Google Drive
+# Can upload file
+# Can download file
+# Can create folder
+# Can search files by word in title, can add another search parameters
